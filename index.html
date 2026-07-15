@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Meidu Energy Storage — LiFePO4 batteries &amp; hybrid inverters, direct from the factory</title>
-<meta name="description" content="Dongguan-based manufacturer of LiFePO4 storage batteries and hybrid inverters. CE, UN38.3 and IEC 62619 certified. CAN/RS485 compatible with Deye, Growatt and Solis. Low entry MOQ for distributors.">
+<meta name="description" content="Dongguan-based manufacturer of LiFePO4 storage batteries and hybrid inverters. CE, UN38.3 and IEC 62619 certified. CAN/RS485 communication, compatibility confirmed per inverter model. Low entry MOQ for distributors.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -180,6 +180,12 @@ footer a:hover{text-decoration:underline}
 .tier-list li{padding:5px 0 5px 22px;position:relative}
 .tier-list li:before{content:"";position:absolute;left:0;top:9px;width:11px;height:6px;border-left:2px solid var(--green);border-bottom:2px solid var(--green);transform:rotate(-45deg)}
 .tiers-note{background:var(--ink);color:#8DA6B3;font-size:11px;letter-spacing:.06em;padding:14px 20px;margin:20px 0 0;border-radius:6px;line-height:1.6}
+
+.compat-note{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.compat-item{background:#fff;padding:22px 20px;display:flex;gap:12px;align-items:flex-start}
+.compat-item i{flex:none;width:10px;height:10px;margin-top:6px;border-left:2px solid var(--green);border-bottom:2px solid var(--green);transform:rotate(-45deg)}
+.compat-item b{display:block;font-size:14px;color:var(--slate);margin-bottom:4px}
+.compat-item span{font-size:13px;color:var(--steel);line-height:1.5}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
@@ -219,22 +225,14 @@ footer a:hover{text-decoration:underline}
 <section>
   <div class="wrap">
     <div class="section-head">
-      <p class="eyebrow">Protocol compatibility</p>
-      <h2>It talks to the inverters you already sell</h2>
-      <p>Most storage packs fail at the handshake, not the cell. Ours communicate natively over CAN and RS485, so your installer commissions the system instead of debugging it.</p>
+      <p class="eyebrow">Inverter compatibility</p>
+      <h2>It has to talk to the inverter you already sell</h2>
+      <p>Most storage packs fail at the handshake, not the cell. Our BMS communicates over CAN and RS485 — the protocols the major inverter brands use. Send us the exact inverter model you work with and we confirm compatibility in writing before you place an order, so your installer commissions the system instead of debugging it.</p>
     </div>
-    <div class="matrix">
-      <table>
-        <thead>
-          <tr><th>Inverter brand</th><th>CAN</th><th>RS485</th><th>Notes</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Deye</td><td class="ok">Yes</td><td class="ok">Yes</td><td>Protocol pre-loaded in BMS</td></tr>
-          <tr><td>Growatt</td><td class="ok">Yes</td><td class="ok">Yes</td><td>Protocol pre-loaded in BMS</td></tr>
-          <tr><td>Solis</td><td class="ok">Yes</td><td class="ok">Yes</td><td>Protocol pre-loaded in BMS</td></tr>
-          <tr><td>Other brands</td><td colspan="2">On request</td><td>Send the model, we confirm before you order</td></tr>
-        </tbody>
-      </table>
+    <div class="compat-note">
+      <div class="compat-item"><i></i><div><b>CAN &amp; RS485 on board</b><span>Standard communication interfaces, not a proprietary lock-in.</span></div></div>
+      <div class="compat-item"><i></i><div><b>Confirmed before you buy</b><span>Send your inverter model — we verify it and put the answer in your quote.</span></div></div>
+      <div class="compat-item"><i></i><div><b>No commissioning surprises</b><span>You order knowing the pack and the inverter already agree.</span></div></div>
     </div>
   </div>
 </section>
