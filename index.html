@@ -199,6 +199,14 @@ footer a:hover{text-decoration:underline}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18197815982"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18197815982');
+</script>
 <body>
 
 <div id="thankyou" style="display:none;position:fixed;inset:0;z-index:200;background:var(--ink);overflow-y:auto;">
@@ -648,6 +656,7 @@ form.addEventListener('submit', async function(e){
       'https://wa.me/' + SALES_WA + '?text=' + encodeURIComponent(summary);
     // mostra a tela de obrigado (mesmo arquivo)
     document.getElementById('thankyou').style.display = 'block';
+    if (window.gtag) { gtag('event', 'conversion', {'send_to': 'AW-18197815982'}); }
     window.scrollTo(0, 0);
     // ponto de disparo do Meta Pixel de conversao, quando existir:
     // if (window.fbq) fbq('track', 'Lead');
